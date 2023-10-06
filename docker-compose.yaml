@@ -1,0 +1,31 @@
+version: '0.1'
+
+services:
+  # sql:
+  #   image: mariadb:10.7.4 # M1 Alternative
+  #   restart: always
+  #   ports:
+  #     - 3307:3306
+  #   volumes:
+  #     - mysqldata:/var/lib/mysql
+  #   env_file: .env
+  #   cap_add:
+  #     - SYS_NICE # CAP_SYS_NICE
+  #   command: mysqld --sql_mode='' --character-set-server=utf8 --collation-server=utf8_slovenian_ci --innodb-flush-log-at-trx-commit=0
+  web:
+    build:
+      context: ./
+      dockerfile: ./modules/docker/Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - .:/home/sites
+      # - /opt/tools:/opt/tools
+
+networks:
+  default:
+    name: esoftplay
+
+# volumes:
+#   mysqldata:
+#     driver: local
