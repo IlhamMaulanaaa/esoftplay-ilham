@@ -1,0 +1,309 @@
+.domain-search{
+	margin: 0;
+	padding: 46px 0;
+	
+	.form-title{
+		margin-top: 0;
+		margin-bottom: 2px;
+		color: #fff;
+		font-family: $font2;
+		font-weight: 100;
+        @media (max-width: 1199px){
+            font-size: 23px;
+        }
+		strong{
+			display: block;
+            @media (max-width: 991px){
+                display: inline-block;
+            }
+		}
+	}
+	p{
+		color: $anakiwa;
+        margin: 0;
+        @media (max-width: 991px){
+            margin-bottom: 20px;
+        }
+	}
+	
+	.btn{
+		padding: 0 54px;
+		line-height: 60px;
+        @media (max-width: 479px){
+            padding: 0 25px;
+        }
+	}
+	.input-group{
+  		box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+		& + p{
+			color: #fff;
+			font-size: 15px;
+			font-family: $font2;
+			font-weight: 100;
+			margin-top: 15px;
+			margin-bottom: 0;
+            @media (max-width: 479px){
+                font-size: 12px;
+            }
+			strong{
+				margin-right: 40px;
+                @media (max-width: 767px){
+                    margin-right: 20px;
+                }
+                @media (max-width: 479px){
+                    margin-right: 10px;
+                }
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	.form-control{
+		height: 60px;
+		border-radius: 0;
+		border: none;
+		&:focus{
+			box-shadow: none;
+		}
+	}
+	.input-group-addon{
+		border: none;
+	}
+	
+    
+    &.style2{
+        padding: 60px 0;
+        text-align: center;
+        .input-group{
+            max-width: 877px;
+            margin: 0 auto;
+        }
+	
+        .form-title{
+            strong{
+                display: inline-block;
+            }
+        }
+        p{
+            color: #97acc4;
+            margin-bottom: 30px;
+        }
+        
+        .btn{
+            background: $blue;
+        }
+        
+        .input-group{
+            & + p{
+                color: #fff;
+                display: table;
+                width: 100%;
+                margin-top: 20px;
+                margin-bottom: 0;
+                &.prices{
+                    margin-top: 55px;
+                }
+            }
+        }
+    }
+    
+    &.bg-primary{
+        background: #ef5b34;
+        p{
+            font-family: $font3;
+            font-size: 16px;
+            color: #fff;
+            font-weight: normal;
+        }
+        .input-group{
+            & + p{
+                font-weight: 300;
+            }
+        }
+        
+        .btn{
+            background: $dark2;
+            &:hover,&:focus{
+                background: $primary;
+            }
+        }
+    }
+}
+
+.ds-texts-col{
+    position: relative;
+    padding-left: 34px;
+    &:before{
+        content: '';
+        display: block;
+        width: 3px;
+        height: 105px;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        @media (max-width: 991px){
+            height: 85px;
+        }
+    }
+}
+
+.ds-price-box{
+    display: block;
+    float: left;
+    padding: 10px 10px 10px 40px;
+    background: transparentize(#45869e, 0.9);
+    line-height: 55px;
+    margin-right: 50px;
+    font-size: 24px;
+    text-align: left;
+    @media (max-width: 1199px){
+        padding-left: 17px;
+        margin-right: 15px;
+    }
+    @media (max-width: 991px){
+        padding-left: 15px;
+        margin-right: 15px;
+        font-size: 18px;
+    }
+    @media (max-width: 767px){
+        width: calc(50% - 5px);
+        margin-bottom: 10px;
+        margin-right: 10px;
+        &:nth-of-type(2){
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 479px){
+        width: 100%;
+        margin-right: 0;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+    span{
+        float: left;
+    }
+    strong{
+        margin-left: 40px;
+        font-size: 20px;
+        float: right;
+        padding: 0 25px;
+        background: #345263;
+        @media (max-width: 991px){
+            padding: 0 20px;
+            font-weight: 600;
+            font-size: 16px;
+            margin-left: 21px;
+        }
+    }
+    &:last-child{
+        margin-right: 0;
+    }
+    &:hover,&:focus{
+        strong{
+            background: #ef5b34;
+        }
+    }
+}
+
+/*Domain Search form Radial*/
+.domain-search-radial{
+    margin: -100px 0;
+    z-index: 2;
+    position: relative;
+    @media (max-width: 767px){
+        margin: 0;
+        z-index: 0;
+        .container{
+            padding: 0;
+        }
+    }
+}
+
+.dsr-form-container{
+    margin: 0;
+    border-radius: 150px;
+    background: #fff;
+    display: block;
+    overflow: hidden;
+    @media (max-width: 767px){
+        border-radius: 0;
+    }
+}
+
+.dsr-form-heading{
+    background: $pblue;
+    padding: 35px 35px 60px 90px;
+    color: #fff;
+    @include x($m){
+        width: 28%;
+    }
+    @media (max-width: 991px){
+        padding: 30px 30px 60px 70px;
+    }
+    @media (max-width: 767px){
+        padding: 30px;
+    }
+    @media (max-width: 609px){
+        display: block;
+    }
+    img{
+        margin-bottom: 10px;
+    }
+    
+    .form-title{
+        font-family: $font4;
+        letter-spacing: 0;
+        font-weight: 100;
+        margin: 0;
+        white-space: nowrap;
+        strong{
+            display: block;
+        }
+    }
+}
+.dsr-form-inputs{
+    vertical-align: middle;
+    padding-left: 65px;
+    padding-right: 95px;
+    @include x($m){
+        width: 72%;
+    }
+    @media (max-width: 991px){
+        padding-left: 30px;
+        padding-right: 70px;
+    }
+    @media (max-width: 767px){
+        padding: 0 30px;
+    }
+    @media (max-width: 609px){
+        padding: 30px;
+    }
+    .input-group{
+        border-bottom: 1px solid #cad2d5;
+        width: 100%;
+    }
+    
+    .form-control{
+        border: none;
+        padding-left: 0;
+        height: 48px;
+        @include placeholder{
+            font-family: $font4;
+            font-size: 20px;
+            color: $palsky;
+            @media (max-width: 991px){
+                font-size: 14px;
+            }
+        }
+    }
+    .input-group-addon{
+        border: none;
+        button{
+            background: none;
+        }
+    }
+}

@@ -1,0 +1,228 @@
+.site-footer{
+    
+}
+
+.site-footer-top{
+    background: darken( saturate( adjust-hue( $dark
+        , -11deg ), 1 ), 8 );
+    padding: 30px 0;
+    [class^="col-sm"]{
+        float: none;
+        vertical-align: middle;
+        padding: 0 15px;
+    }
+    
+    .media-object{
+        color: lighten( saturate( adjust-hue( $palsky, -9deg ), 1 ), 3 );
+        font-size: 14px;
+        img{
+            margin-right: 15px;
+        }
+    }
+    
+    .media-body{
+        @media (max-width: 479px){
+            display: block;
+            width: 100%;
+            padding-top: 25px;
+        }
+    }
+    
+    p{
+        line-height: 1.7;
+        font-family: $font3;
+        margin: 0;
+        color: $palsky;
+    }
+}
+
+.site-footer-bottom{
+    padding: 43px 0;
+    background: darken( desaturate( adjust-hue( $dark, -10deg ), 1 ), 5 );
+    
+    &.botpad0{
+        padding-bottom: 0;
+    }
+}
+
+.site-footer-bottom4{
+    padding-top: 70px;
+}
+
+.footer-hr{
+    border-color: #fff;
+    margin: 40px 0 55px;
+    opacity: .10;
+}
+
+.widget-footer{
+    padding: 15px;
+    .widget-title{
+        font-size: 16px;
+        font-weight: 600;
+        font-family: $font2;
+        margin-top: 0;
+        margin-bottom: 35px;
+        color: #fff;
+    }
+    
+    .menu{
+        padding: 0;
+        list-style: none;
+        li{
+            padding: 0 15px;
+            width: 50%;
+            float: left;
+            margin-bottom: 18px;
+            @media (max-width: 479px){
+                width: 100%;
+            }
+            a{
+                display: block;
+                font-family: $font2;
+                color: lighten( desaturate( adjust-hue( $dark, -11deg ), 6 ), 32 );
+                &:hover,&:focus{
+                    color: $palsky;
+                }
+            }
+        }
+    }
+    
+    &.cmenu-1col{
+        .menu{
+            li{
+                width: 100%;
+            }
+        }
+    }
+    
+    p{
+        margin-bottom: 20px;
+        line-height: 1.7;
+        font-family: $font2;
+        padding: 0 15px;
+        color: lighten( desaturate( adjust-hue( $dark, -11deg ), 6 ), 32 );
+    }
+}
+    
+.fsocial{
+    padding: 0 15px;
+    display: table;
+    li{
+        float: left;
+        margin-right: 22px;
+        font-size: 17px;
+        &:last-child{
+            margin-right: 0;
+        }
+        a{
+            color: lighten( desaturate( adjust-hue( $dark, -11deg ), 6 ), 32 );
+            &:hover,&:focus{
+                color: #FFF;
+            }
+        }
+    }
+}
+
+.footer-subscribe-form{
+    padding: 0 15px;
+    .input-group-addon{
+        border: none;
+    }
+    .btn{
+        line-height: 48px;
+        padding: 0 38px;
+    }
+    .form-control{
+        border: none;
+        height: 48px;
+    }
+}
+
+.copyright-hp{
+    background: darken( desaturate( adjust-hue( $dark, -10deg ), 1 ), 5 );
+    line-height: 60px;
+    font-family: $font3;
+    color: $palsky;
+    letter-spacing: 1.4px;
+}
+
+.copyright-hp2{
+    padding: 25px 0;
+    background: #232b33;
+    font-family: $font3;
+    color: $palsky;
+    .fsocial{
+        margin: 0;
+        
+        @media (max-width: 767px){
+            float: left !important;
+            margin-top: 10px;
+            padding-left: 0;
+        }
+    }
+}
+
+.frecent-post{
+    padding: 0 15px;
+    .media-left{
+        padding-right: 18px;
+    }
+    h2{
+        font-weight: 500;
+        font-family: $font2;
+        margin-top: 0;
+        line-height: 1.3;
+        color: #bfd4e0;
+        @include transition;
+        &:hover,&:focus{
+            color: #fff;
+        }
+    }
+    h6{
+        font-family: $font3;
+        margin: 0;
+        line-height: 1;
+        color: #bfd4e0;
+        @include transition;
+        opacity: .5;
+        &:hover,&:focus{
+            color: #fff;
+            opacity: 1;
+        }
+    }
+}
+
+.footer-clients-logos{
+    position: relative;
+    padding: 30px 0;
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 15px;
+        right: 15px;
+        height: 1px;
+        background: #434b55;
+    }
+    
+    .client-logo{
+        a{
+            opacity: 0.7;
+            line-height: 70px;
+        }
+        &:first-of-type{
+            text-align: left;
+            @media (max-width: 767px){
+                text-align: center;
+            }
+        }
+        &:last-of-type{
+            text-align: right;
+            @media (max-width: 767px){
+                text-align: center;
+            }
+        }
+    }
+}

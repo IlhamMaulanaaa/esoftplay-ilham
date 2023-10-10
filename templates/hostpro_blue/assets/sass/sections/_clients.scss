@@ -1,0 +1,153 @@
+.client-logos{
+    padding: 90px 0 100px;
+    &.style2{
+        background: #f5f8fa;
+    }
+}
+
+.client-logos-row{
+    margin-bottom: 80px;
+}
+
+.client-logo{
+    text-align: center;
+    a{
+        display: inline-block;
+        line-height: 110px;
+        opacity: 0.2;
+        filter: grayscale(1);
+        img{
+            max-width: 100%;            
+        }
+        &:hover,&:focus{
+            opacity: 1;
+            filter: grayscale(0);
+        }
+    }
+    
+    .tooltip{
+        
+    }
+    .tooltip-arrow{}
+    .tooltip-inner{
+        border-radius: 0;
+        font-family: $font2;
+        font-size: 16px;
+        line-height: 1.25;
+        padding: 5px 15px;
+    }
+}
+
+.flipstar-carousel{
+    margin: 0 -15px;
+    padding: 0 15px;
+    padding-bottom: 65px;
+    position: relative;
+    .flipster__item__content{
+        width: 365px;
+        background: #fff;
+        box-shadow: 0px 7px 32px 0px rgba(158, 158, 158, 0.32);
+        border: 1px solid #ebebeb;
+        border-bottom: 9px solid $primary;
+        padding: 24px 35px 50px;
+        @include transition;
+        @media (max-width: 479px){
+            width: 300px;
+        }
+    }
+    .media{
+        margin-bottom: 25px;
+    }
+    .media-left{
+        padding-right: 20px;
+        @media (max-width: 479px){
+            display: block;
+            padding-right: 0;
+            padding-bottom: 15px;
+        }
+    }
+    .media-object{
+        width: 96px;
+        height: 96px;
+        border: 5px solid #fff;
+        box-shadow: 0px 0px 2px 0px rgba(152, 152, 152, 0.62);
+        border-radius: 100%;
+        img{
+            border-radius: 100%;
+            max-width: 100%;
+        }
+    }
+    h3{
+        margin: 0; 
+        font-family: $font2;
+        font-weight: bold;
+        color: $dark;  
+        font-size: 22px;
+        line-height: 1;
+    }
+    .media-body{
+    }
+    p{
+        margin: 0;        
+        font-family: $font3;
+        font-size: 16px;
+        line-height: 2.25;
+        color: $palsky;
+        @media (max-width: 479px){
+            font-size: 14px;
+            line-height: 1.7;
+        }
+    }
+    
+    .flipster__item--past-2 .flipster__item__content, 
+    .flipster__item--future-2 .flipster__item__content{
+        transform: scale(0.80);
+    }
+    
+    .flipster__item--past-1 .flipster__item__content,
+    .flipster__item--future-1 .flipster__item__content{        
+        transform: scale(0.90);
+    }
+    
+    .flipster__item--past-2,
+    .flipster__item--past-1,
+    .flipster__item--future-1,
+    .flipster__item--future-2{  
+        opacity: 1;
+        .flipster__item__content{
+            *{
+                opacity: 0.75;
+            }
+        }
+    }
+}
+
+.flipster__nav{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    li{
+        a{
+            height: 4px;
+            width: 19px;
+            background: #ededed;
+            border-radius: 5px;
+            overflow: hidden;
+            padding: 0;
+            color: transparent;
+            &:after{
+                display: none;
+            }
+            &:hover,&:focus{
+                background: $pblue;
+            }
+        }
+        &.flipster__nav__item--current{
+            a{
+                background: $pblue;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+/************************************************
+Template Name: Host-Pro Boostrap Template
+Author: BoostrapMart
+Develop By: BoostrapMart
+Developer URL: http://info@bootstrapmart.com
+************************************************/
+
+/*
+*	Table of Contents
+*	
+*	
+*/
+
+/*
+*	Helper Files
+*/
+@import "helpers/fonts";
+@import "helpers/mixins";
+@import "helpers/colors";
+@import "helpers/functions";
+@import "helpers/globals";
+
+// Content Styles
+/*01: Header*/
+@import "sections/header";
+@import "sections/slider";
+@import "sections/search-domain";
+@import "sections/services";
+@import "sections/about";
+@import "sections/c2a";
+@import "sections/pricing";
+@import "sections/testimonial";
+@import "sections/blogs";
+@import "sections/clients";
+@import "sections/footer";
+@import "sections/contact";
+@import "sections/features";
+@import "sections/shortcodes";

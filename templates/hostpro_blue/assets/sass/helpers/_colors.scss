@@ -1,0 +1,69 @@
+$white: #fff;
+$black: #000;
+$primary: #ff6726;
+$dark: #36424d;
+$dark2: #48535c;
+$blue: #727bd8;
+$pblue: #35abdf;
+$green: #3ac261;
+$cgreen: #00bbaf;
+$anakiwa: #B0E7FF;
+$palsky: #647482;
+$warning: #b76973;
+$success: #79985b;
+$info: #52889b;
+$notify: #b49133;
+$std: #797979;
+
+/*Colors*/
+$colours: (
+	'white' : $white,
+	'black' : $black,
+	'primary': $primary,
+	'dark': $dark,
+	'dark2': $dark2,
+	'blue': $blue,
+	'green': $green,
+	'cgreen': $cgreen,
+	'pblue': $pblue,
+	'anakiwa': $anakiwa,
+	'palsky': $palsky,
+	'warning': $warning,
+	'success': $success,
+	'info': $info,
+	'notify': $notify,
+	'std': $std,
+);
+	
+@each $color, $hex in $colours{
+	.color-#{$color}{
+		color: $hex;
+	}
+}
+
+
+/*Background Colors*/
+$bgcolours: (
+	'white' : $white,
+	'black' : $black,
+	'primary': $primary,
+	'dark': $dark,
+	'dark2': $dark2,
+	'blue': $blue,
+	'pblue': $pblue,
+	'green': $green,
+	'cgreen': $cgreen,
+	'anakiwa': $anakiwa,
+	'palsky': $palsky,
+	'warning': $warning,
+	'success': $success,
+	'info': $info,
+	'notify': $notify,
+	'std': $std,
+);
+	
+@each $bg, $hex in $bgcolours{
+	.bg-#{$bg}{
+		background-color: $hex;
+	}
+}

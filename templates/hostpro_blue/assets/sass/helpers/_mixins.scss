@@ -1,0 +1,36 @@
+// Mixins
+
+// Transitions
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Form Input Placeholder
+@mixin placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+// Responsive Media Query for Max Width
+$L: 1280px;
+$M: 1199px;
+$S: 991px;
+$X: 767px;
+$U: 479px;
+
+@mixin m($size){
+	@media (max-width: $size){ @content; }	
+}
+
+// Responsive Media Query for Min Width
+$l: 1200px;
+$m: 992px;
+$s: 768px;
+$x: 480px;
+$u: 320px;
+
+@mixin x($size){
+	@media (min-width: $size){ @content; }	
+}
