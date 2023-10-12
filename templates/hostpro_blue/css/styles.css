@@ -1374,7 +1374,7 @@ p {
   width: 50%;
   float: left;
   padding-left: 35px;
-  background: url(../icons/slide-check.png) no-repeat scroll 0 5px;
+  background: url(/ilham/templates/hostpro_blue/assets/icons/slide-check.png) no-repeat scroll 0 5px;
   margin-bottom: 20px;
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -2246,7 +2246,7 @@ p {
   color: #36424d;
   width: 50%;
   float: left;
-  background: url(../icons/circle-check.png) no-repeat scroll 0 center;
+  background: url(/ilham/templates/hostpro_blue/assets/icons/circle-check.png) no-repeat scroll 0 center;
   padding-left: 52px;
   line-height: 2;
   font-family: "Lato", sans-serif;
@@ -2471,7 +2471,7 @@ p {
   right: 0;
   left: 0;
   bottom: 0;
-  background: url(../icons/why-choose-us.png) no-repeat scroll center 20px;
+  background: url(/ilham/templates/hostpro_blue/assets/icons/why-choose-us.png) no-repeat scroll center 20px;
   opacity: 0;
   transition: all 300ms linear 0s;
 }
@@ -2597,7 +2597,7 @@ p {
   border: 9px solid #fff;
   margin: 0;
   height: 348px;
-  background: url(../images/fun-fact-video.jpg) no-repeat scroll center 0;
+  background: url(/ilham/templates/hostpro_blue/assets/images/fun-fact-video.jpg) no-repeat scroll center 0;
   background-size: cover;
   box-shadow: 0px 9px 45px 0px rgba(0, 0, 0, 0.16);
   display: -webkit-flex;
@@ -2673,7 +2673,7 @@ p {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(../images/fun-fact-video2.jpg) no-repeat scroll 0 0;
+  background: url(/ilham/templates/hostpro_blue/assets/images/fun-fact-video2.jpg) no-repeat scroll 0 0;
   background-size: cover;
   opacity: 0.15;
 }
@@ -2851,7 +2851,7 @@ p {
 }
 
 .cmjtablist.nav {
-  background: url(../icons/journey.png) no-repeat scroll center center;
+  background: url(/ilham/templates/hostpro_blue/assets/icons/journey.png) no-repeat scroll center center;
   margin: 0 45px 170px;
   max-width: 100%;
   width: auto;
@@ -3030,7 +3030,7 @@ p {
 
 /*Why Choose Us 4*/
 .why-choose-us4 {
-  background: url(../icons/server.png) no-repeat scroll center bottom #fff;
+  background: url(/ilham/templates/hostpro_blue/assets/icons/server.png) no-repeat scroll center bottom #fff;
   padding: 95px 0 0;
 }
 
@@ -3091,7 +3091,7 @@ p {
 .why-choose-us5 {
   padding: 200px 15px 170px;
   background-repeat: no-repeat;
-  background-image: url(../icons/bgcloud1.png), url(../icons/bgcloud2.png), url(../icons/bgcloud3.png);
+  background-image: url(/ilham/templates/hostpro_blue/assets/icons/bgcloud1.png), url(/ilham/templates/hostpro_blue/assets/icons/bgcloud2.png), url(/ilham/templates/hostpro_blue/assets/icons/bgcloud3.png);
   background-position: calc( 50% - 585px) 0, calc( 50% + 585px) center, calc( 50% - 585px) 625px;
   background-color: #fff;
 }
@@ -3147,7 +3147,7 @@ p {
 /*Fun Facts 5*/
 .fun-facts-row5 {
   padding: 220px 0 145px;
-  background: url(../images/fun-fact-bg.jpg) no-repeat scroll center 0 #fff;
+  background: url(/ilham/templates/hostpro_blue/assets/images/fun-fact-bg.jpg) no-repeat scroll center 0 #fff;
   background-size: cover;
 }
 
@@ -3222,7 +3222,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(../images/vidbg.jpg) no-repeat fixed center center;
+  background: url(/ilham/templates/hostpro_blue/assets/images/vidbg.jpg) no-repeat fixed center center;
   background-size: cover;
   opacity: 0.21;
 }
@@ -3276,7 +3276,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(../images/vidbg.jpg) no-repeat fixed center center;
+  background: url(/ilham/templates/hostpro_blue/assets/images/vidbg.jpg) no-repeat fixed center center;
   background-size: cover;
   opacity: 0.15;
 }
@@ -3334,7 +3334,7 @@ p {
 }
 
 .pricing-tabs-section.style5 {
-  background: url(../icons/bg-circle.png) no-repeat scroll center 0 #fff;
+  background: url(/ilham/templates/hostpro_blue/assets/icons/bg-circle.png) no-repeat scroll center 0 #fff;
   border-bottom: 1px solid #e8ebec;
 }
 
@@ -3685,7 +3685,7 @@ p {
   width: 40px;
   height: 24px;
   content: '';
-  background: url(../icons/pr4.png) no-repeat scroll 0 0;
+  background: url(/ilham/templates/hostpro_blue/assets/icons/pr4.png) no-repeat scroll 0 0;
 }
 
 .pricing-plan.style4 ul li + li {
@@ -4940,7 +4940,7 @@ p {
 
 .latest-blog-posts-dots {
   padding: 30px 0;
-  background: url(../icons/dots.png) repeat scroll center center #fff;
+  background: url(/ilham/templates/hostpro_blue/assets/icons/dots.png) repeat scroll center center #fff;
 }
 
 .lbpd-inner {
@@ -6848,7 +6848,7 @@ blockquote {
 
 .features-sliders {
   padding: 105px 0;
-  background: url(../images/service-slide-bg.jpg) no-repeat scroll center bottom #fff;
+  background: url(/ilham/templates/hostpro_blue/assets/images/service-slide-bg.jpg) no-repeat scroll center bottom #fff;
 }
 
 .features-sliders .hp-h2 {
@@ -6897,7 +6897,7 @@ blockquote {
 
 .features-sliders .hst-circle-list li {
   padding-left: 40px;
-  background-image: url(../icons/features-check.png);
+  background-image: url(/ilham/templates/hostpro_blue/assets/icons/features-check.png);
 }
 
 .features-sliders .owl-dots {
@@ -6925,7 +6925,7 @@ blockquote {
 }
 
 .hosting-page-cover {
-  background: url(../images/hosting.jpg) no-repeat fixed center 0;
+  background: url(/ilham/templates/hostpro_blue/assets/images/hosting.jpg) no-repeat fixed center 0;
   background-size: cover;
   padding: 185px 0 195px;
 }

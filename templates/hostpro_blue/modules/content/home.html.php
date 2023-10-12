@@ -3,9 +3,15 @@
 $config = $output['config'];
 $arr		= $output['data'];
 foreach((array)$arr AS $data)
-{
-	$link = content_link($data['id'], $data['title']);
-	if($config['title'])
+
+{?>
+		<?php echo (!empty($config['thumbnail']) && !empty($data['image'])) ? content_src($data['image'], ' class="img-thumbnail pull-left" title="'.$data['title'].'"') : '';?>
+
+<?php
+$link = content_link($data['id'], $data['title']);
+?>
+<?php
+if($config['title'])
 	{
 		if($config['title_link'])
 		{
@@ -21,7 +27,8 @@ foreach((array)$arr AS $data)
 	if(	$config['created'] || $config['author'] )
 	{
 		?>
-		<hr />
+
+<hr />
 		<div class="row">
 			<?php echo ($config['author']) ? '<div class="col-md-6"><span>'.lang('author').$data['created_by_alias'].'</span></div>' : '';?>
 			<?php echo ($config['created']) ? '<div class="col-md-6 text-right"><span>'.lang('created').content_date($data['created']).'</span></div>' : '';?>
@@ -34,7 +41,7 @@ foreach((array)$arr AS $data)
 	<p>
 		<?php echo $data['content'];?>
 		<?php echo ($config['read_more']) ? '<a href="'.$link.'" class="readmore">'.lang('Read more').'</a>' : '';?>
-</p>
+	</p>
 	<?php
 	if($config['tag'])
 	{

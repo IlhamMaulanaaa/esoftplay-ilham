@@ -58,7 +58,7 @@ Developer URL: http://info@bootstrapmart.com
 				items: 1,
 				margin: 0,
 				nav: true,
-                navText: ['<img src="assets/icons/s-arrow-left.png" alt="Testmonial Arrow">','<img src="assets/icons/s-arrow-right.png" alt="Testmonial Arrow">'],
+                navText: ['<img src="/ilham/templates/hostpro_blue/assets/icons/s-arrow-left.png" alt="Testmonial Arrow">','<img src="/ilham/templates/hostpro_blue/assets/icons/s-arrow-right.png" alt="Testmonial Arrow">'],
 				autoplay: true,
                 loop: true
 			})
