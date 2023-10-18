@@ -8,14 +8,108 @@
 @import url('../assets/vendors/fontawesome/css/font-awesome.min.css');
 @import url('main.css');
 
-
-#rating-content-trim-hostpro{
-    margin: 5px 0px 20px 0px;
-    font-size: 18px;
+#rating-content-trim-hostpro {
+  margin: 5px 0px 20px 0px;
+  font-size: 18px;
 }
 #hosting-services-tabs-section-trim {
-    margin: 85px 0 -95px;
- }
-  #title-link-trim-content{
-    color: #48535c;
-  }
+  margin: 85px 0 -95px;
+}
+#title-link-trim-content {
+  color: #48535c;
+}
+#column-trim-content {
+  display: flex;
+  justify-content: center;
+}
+#judul-hasil-search{
+  text-align: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px 0px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.card h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  margin-bottom: 20px;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card .row {
+  margin: 10px 0;
+}
+
+.card .col-md-3 {
+  text-align: center;
+}
+
+.card .col-md-9 {
+  text-align: justify;
+}
+
+.card .readmore {
+  color: #007BFF;
+}
+
+.card .text-muted {
+  color: #888;
+}
+
+.card .btn {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#deskripsi{
+  text-align: left;
+}
+#rating-result{
+  margin-top: 20px;
+}
+#rating-result > *{
+  padding: 0px;
+  justify-content: space-around;
+}
+#rating-tags{
+  display: inline-block;
+}
+#rating{
+  padding: 0px;
+  text-align: left;
+}
+#tags{
+  margin: 20px 0px;
+  padding: 0px;
+
+}
+#titles{
+  padding: 0px;
+}
+#modifikasi{
+  margin-right: 200ppx;
+}
+#image{
+  padding: 30px 0px 0px;
+}

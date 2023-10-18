@@ -9,9 +9,20 @@
 <body>
   <div id="page" class="site row">
     <main id="contents" class="site-contnts">
-      <?php echo $sys->block_show('top'); ?>
-      <?php echo $sys->block_show('header'); ?>
-      <?php echo $sys->block_show('intro'); ?>
+      <header id="header" class="site-header">
+        <nav class="navbar navbar-defatult navbar-fixed-top fluid-navbar navbar-style1">
+          <div class="container-fluid ">
+            <?php echo $sys->block_show('logo'); ?>
+            <div class="collapse navbar-collapse" id="main-nav">
+              <ul class="navbar-nav nav navbar-right">
+                <?php echo $sys->block_show('top'); ?>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+        <?php echo $sys->block_show('header'); ?>
+        <?php echo $sys->block_show('intro'); ?>
       <?php echo trim($Bbc->content); ?>
       <?php echo $sys->block_show('content_top'); ?>
       <?php echo $sys->block_show('content_bottom'); ?>
