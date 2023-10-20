@@ -5,7 +5,6 @@
         <span class="text text-muted pull-right text-justify"><?php echo lang('page') . ' ' . ($page + 1) . ' ' . lang('of') . ' ' . items($cat['total_page'], 'page'); ?></span>
         <div class="clearfix"></div>
     <?php } ?>
-
     <ul>
         <?php foreach ((array)$cat['list'] as $data) {
             $edit_data = (content_posted_permission() && $user->id == $data['created_by']) ? 1 : 0;
@@ -32,10 +31,8 @@
                                     <?php
                                     $r = content_category($data['id'], $config['tag_link']);
                                     echo lang('Tags') . implode(' ', $r);
-
                                     ?>
                                 </div>
-
                             <?php
                             } ?>
                         </div>
@@ -46,8 +43,8 @@
                         <hr>
                         <div class="row" id="rating-result">
                             <?php
-                            if ( !empty($config['author'])) { ?>
-                                <div id="author"class="col-md-3">
+                            if (!empty($config['author'])) { ?>
+                                <div id="author" class="col-md-3">
                                     <?php echo (!empty($config['author'])) ? '<span class="text-muted pull-left">' . lang('author') . $data['created_by_alias'] . '</span>' : ''; ?>
                                 </div>
                             <?php }
@@ -55,26 +52,26 @@
                                 echo '<div class="col-md-3 text-left" id="rating">' . rating($data['rating']) . '</div>';
                             } ?>
                             <?php
-                if (empty($data['revised'])) {
-                    $config['modified'] = 0;
-                }
-                if (!empty($config['modified']) || !empty($edit_data)) { ?>
-                    
-                        <?php
-                        if (!empty($edit_data)) { ?>
-                            <div class=" text-left col-md-3" id="modifikasi">
-                                <?php echo ($config['modified']) ? '<span class="text-muted ">' . lang('modified') . content_date($data['modified']) . '</span>' : ''; ?>
-                                <a href="<?php echo $Bbc->mod['circuit'] . '.posted_form&id=' . $data['id']; ?>" title="<?php echo lang('edit content'); ?>"><?php echo icon('edit'); ?></a>
-                            </div>
-                        <?php } else {
-                            echo ($config['modified']) ? '<div  class=" text-left col-md-3"id="modifikasi"><span class="text-muted">' . lang('modified') . content_date($data['modified']) . '</span></div>' : ''; ?>
-                        <?php }
-                     } 
-                     if (!empty($config['created']) ) { ?>
+                            if (empty($data['revised'])) {
+                                $config['modified'] = 0;
+                            }
+                            if (!empty($config['modified']) || !empty($edit_data)) { ?>
+
+                                <?php
+                                if (!empty($edit_data)) { ?>
+                                    <div class=" text-left col-md-3" id="modifikasi">
+                                        <?php echo ($config['modified']) ? '<span class="text-muted ">' . lang('modified') . content_date($data['modified']) . '</span>' : ''; ?>
+                                        <a href="<?php echo $Bbc->mod['circuit'] . '.posted_form&id=' . $data['id']; ?>" title="<?php echo lang('edit content'); ?>"><?php echo icon('edit'); ?></a>
+                                    </div>
+                                <?php } else {
+                                    echo ($config['modified']) ? '<div  class=" text-left col-md-3"id="modifikasi"><span class="text-muted">' . lang('modified') . content_date($data['modified']) . '</span></div>' : ''; ?>
+                                <?php }
+                            }
+                            if (!empty($config['created'])) { ?>
                                 <div id="created" class="col-md-3">
                                     <?php echo (!empty($config['created'])) ? '<span class="text-muted pull-right">' . lang('created') . content_date($data['created']) . '</span>' : ''; ?>
                                 </div>
-                            <?php }?>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>

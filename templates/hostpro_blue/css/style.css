@@ -12,17 +12,21 @@
   margin: 5px 0px 20px 0px;
   font-size: 18px;
 }
+
 #hosting-services-tabs-section-trim {
   margin: 85px 0 -95px;
 }
+
 #title-link-trim-content {
   color: #48535c;
 }
+
 #column-trim-content {
   display: flex;
   justify-content: center;
 }
-#judul-hasil-search{
+
+#judul-hasil-search {
   text-align: center;
 }
 
@@ -66,7 +70,7 @@
 }
 
 .card .readmore {
-  color: #007BFF;
+  color: #007bff;
 }
 
 .card .text-muted {
@@ -74,7 +78,7 @@
 }
 
 .card .btn {
-  background-color: #007BFF;
+  background-color: #007bff;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -82,34 +86,46 @@
   text-align: center;
 }
 
-#deskripsi{
+#deskripsi {
   text-align: left;
 }
-#rating-result{
+
+#rating-result {
   margin-top: 20px;
 }
-#rating-result > *{
+
+#rating-result > * {
   padding: 0px;
   justify-content: space-around;
 }
-#rating-tags{
+
+#rating-tags {
   display: inline-block;
 }
-#rating{
+
+#rating {
   padding: 0px;
   text-align: left;
 }
-#tags{
+
+#tags {
   margin: 20px 0px;
   padding: 0px;
-
 }
-#titles{
+
+#titles {
   padding: 0px;
 }
-#modifikasi{
+
+#modifikasi {
   margin-right: 200ppx;
 }
-#image{
+
+#image {
   padding: 30px 0px 0px;
+}
+
+#logo-tanpa-link {
+  margin-left: -15px;
+  padding: 10px 15px;
 }
