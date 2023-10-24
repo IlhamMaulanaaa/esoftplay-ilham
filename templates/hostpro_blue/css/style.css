@@ -8,25 +8,20 @@
 @import url('../assets/vendors/fontawesome/css/font-awesome.min.css');
 @import url('main.css');
 
-#rating-content-trim-hostpro {
+.rating_trimcontent {
   margin: 5px 0px 20px 0px;
   font-size: 18px;
 }
 
-#hosting-services-tabs-section-trim {
+#services_trimcontent {
   margin: 85px 0 -95px;
 }
 
-#title-link-trim-content {
+.title_trimcontent {
   color: #48535c;
 }
 
-#column-trim-content {
-  display: flex;
-  justify-content: center;
-}
-
-#judul-hasil-search {
+.title_search_result {
   text-align: center;
 }
 
@@ -86,46 +81,29 @@
   text-align: center;
 }
 
-#deskripsi {
+.description {
   text-align: left;
 }
 
-#rating-result {
-  margin-top: 20px;
-}
-
-#rating-result > * {
-  padding: 0px;
-  justify-content: space-around;
-}
-
-#rating-tags {
-  display: inline-block;
-}
-
-#rating {
-  padding: 0px;
-  text-align: left;
-}
-
-#tags {
+.tags {
   margin: 20px 0px;
   padding: 0px;
 }
 
-#titles {
+.titles {
   padding: 0px;
+  text-align: left;
 }
 
-#modifikasi {
+.modification {
   margin-right: 200ppx;
 }
 
-#image {
+.image {
   padding: 30px 0px 0px;
 }
 
-#logo-tanpa-link {
+.logo_whitout_link {
   margin-left: -15px;
   padding: 10px 15px;
 }

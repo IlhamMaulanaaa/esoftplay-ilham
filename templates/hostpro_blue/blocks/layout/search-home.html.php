@@ -1,13 +1,12 @@
 <?php if (!defined('_VALID_BBC')) exit('No direct script access allowed');
 
-$placeholder = lang($config['caption']);
-$value = '';
-$parts = explode('|', lang($config['caption']));
-$isBold = false;
-$teks = "Ini adalah | contoh | string dengan | karakter | pipa";
-$teks_tanpa_pipa = str_replace('|', '', $placeholder);
-
-if ($Bbc->mod['name'] == 'content' && $Bbc->mod['task'] == 'search') {
+$placeholder           = lang($config['caption']);
+$value                        = '';
+$parts                        = explode('|', $placeholder);
+$is_admin                 = ($Bbc->mod['name'] == 'content' && $Bbc->mod['task'] == 'search') ? true :  false;  
+$teks_tanpa_pipa  = str_replace('|', '', $placeholder);
+$isBold                       = false;
+if ($is_admin) {
   if (!empty($_SESSION['currSearch'])) {
     $placeholder = $_SESSION['currSearch'];
     $value = $_SESSION['currSearch'];
@@ -20,39 +19,39 @@ if ($Bbc->mod['name'] == 'content' && $Bbc->mod['task'] == 'search') {
     <div class="row">
       <div class="col-md-3">
         <?php
-        if ($Bbc->mod['name'] == 'content' && $Bbc->mod['task'] == 'search') {
-        ?>
+        if ($is_admin) 
+        {
+          ?>
+          <p>hasil pencarian</p>
           <h2 class="form-title"> <?php echo '<strong>' . $placeholder . '</strong>'; ?></h2>
           <?php
-        } else {
-          foreach ($parts as $part) {
-            if ($isBold) {
+        } else 
+        {
           ?>
-              <h2 class="form-title"> <?php echo '<strong>' . $part . '</strong>'; ?></h2>
-            <?php
+          <h2 class="form-title"> 
+          <?php
+          foreach ($parts as $part) 
+          {
+            if ($isBold) 
+            {
+              echo '<strong>' . $part . '</strong>'; 
               $isBold = false;
-            } else {
-            ?>
-              <h2 class="form-title"> <?php echo $part; ?></h2>
-        <?php
+            } else 
+            {
+              echo $part; 
               $isBold = true;
             }
           }
-        }
-        ?>
-        <?php
-        if ($Bbc->mod['name'] == 'content' && $Bbc->mod['task'] == 'search') {
-        ?>
-          <p>hasil pencarian</p>
-        <?php
+          ?>
+          </h2>
+          <?php
         }
         ?>
       </div>
       <div class="col-md-9">
         <div class="input-group">
           <input type="text" class="form-control input-sm form-control-sm" name="keyword" value="<?php echo $value; ?>" placeholder="<?php echo $teks_tanpa_pipa; ?>" />
-          <span class="input-group-addon"><input type="submit" value="Search" class="btn btn-primary">
-          </span>
+          <span class="input-group-addon"><input type="submit" value="Search" class="btn btn-primary"></span>
         </div>
       </div>
     </div>
