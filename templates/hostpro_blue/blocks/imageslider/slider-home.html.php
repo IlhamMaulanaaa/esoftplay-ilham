@@ -11,7 +11,7 @@ if ($count > 0)
       $cls = $key ? '' : ' active';
       ?>
       <div class="item" data-slide="<?php echo $dt['image']; ?>">
-        <div class="container">php
+        <div class="container">
           <div class="row">
             <div class="col-sm-11 col-md-8 col-lg-7">
               <h2 class="slide-title"><strong><?php echo $dt['title']; ?></strong></h2>

@@ -1,5 +1,6 @@
 <?php
-if (!defined('_VALID_BBC')) exit('No direct script access allowed');
+if (!defined('_VALID_BBC'))
+  exit('No direct script access allowed');
 
 $admin = 'navbar-fixed-top fluid-navbar navbar-style1';
 $is_admin = _ADMIN != '' ? true : false;
@@ -17,14 +18,14 @@ $is_admin = _ADMIN != '' ? true : false;
     <main id="contents" class="site-contnts">
       <header id="header" class="site-header">
         <nav style="box-shadow: none;" class="navbar navbar-default <?php echo $is_admin ? '' : $admin ?>">
-          <div class="container-fluid" >
+          <div class="container-fluid">
             <div class="navbar-header">
               <?php echo $sys->block_show('logo'); ?>
             </div>
             <div class="collapse navbar-collapse" id="main-nav">
               <?php echo $sys->block_show('top'); ?>
             </div>
-            </div>
+          </div>
         </nav>
       </header>
 
@@ -47,7 +48,7 @@ $is_admin = _ADMIN != '' ? true : false;
   $sys->link_js($sys->template_url . 'assets/vendors/imagesloaded.pkgd.min.js', false);
   $sys->link_js($sys->template_url . 'assets/js/hostpro.js', false);
   ?>
-
+ 
 </body>
 
 </html>
