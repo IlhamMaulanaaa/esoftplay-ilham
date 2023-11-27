@@ -1,6 +1,4 @@
 <?php  if ( ! defined('_VALID_BBC')) exit('No direct script access allowed');
-// pr($output['data']); x
-
 if (!empty($output['data']) && is_array($output['data']))
 {
 	?>
@@ -29,7 +27,7 @@ if (!empty($output['data']) && is_array($output['data']))
 							{
 								$cls = $key  === 0 ? ' active' : '';
 								?>
-								<div class="item carousel-item<?php echo $cls?>" data-slide-to="<?php echo $key ?>">
+								<div class="item carousel-item<?php echo $cls?>" data-slide-no="<?php echo $key ?>">
 										<p><em><?php echo $data['message']?></em></p>
 										<h3 class="ct-customer-name"><?php echo $data['name']?></h3>
 										<h5 class="ct-customer-title"><?php echo $data['date']?></h5>

@@ -1,7 +1,6 @@
 <?php
-// Define an array of colors
 $color = array('green', 'primary', 'blue');
-$indexcolor = 0; // Initialize color index
+$indexcolor = 0; 
 ?>
 
 <section class="row pricing-tabs-section">
