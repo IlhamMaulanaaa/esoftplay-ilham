@@ -1,5 +1,4 @@
 <?php if (!defined('_VALID_BBC')) exit('No direct script access allowed');
-
 $count = count($output['images']);
 if ($count > 0) 
 {
@@ -20,7 +19,7 @@ if ($count > 0)
               if ($dt['link']) 
               {
                 ?>
-                <a href="<?php echo $dt['link']; ?>" class="btn btn-primary"><?php echo lang('Learn More'); ?></a>
+                <a href="<?php echo $dt['link']; ?>" class="btn btn-primary" target="_blank"><?php echo lang('Learn More'); ?></a>
                 <?php
               }
               ?>

@@ -1,12 +1,13 @@
 <?php if (!defined('_VALID_BBC')) exit('No direct script access allowed');
-
 $placeholder  = lang($config['caption']);
 $value        = '';
 $parts        = explode('|', $placeholder);
 $is_search    = ($Bbc->mod['name'] == 'content' && $Bbc->mod['task'] == 'search') ? true : false;
 
-if ($is_search) {
-  if (!empty($_SESSION['currSearch'])) {
+if ($is_search) 
+{
+  if (!empty($_SESSION['currSearch'])) 
+  {
     $placeholder  = $_SESSION['currSearch'];
     $value        = $_SESSION['currSearch'];
   }

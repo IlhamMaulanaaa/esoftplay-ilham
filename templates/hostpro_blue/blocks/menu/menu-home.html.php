@@ -2,7 +2,6 @@
 $r = explode(' ', $config['submenu']);
 $y = @$r[0] == 'top' ? 'top' : '';
 $x = @$r[1] == 'left' ? 'left' : '';
-
 function _menu_home($menus, $y = '', $x = '', $level = -1)
 {
 	$output = '';

@@ -36,7 +36,15 @@ $is_admin = _ADMIN != '' ? true : false;
       <?php echo $sys->block_show('content_bottom'); ?>
       <?php echo $sys->block_show('bottom'); ?>
     </main>
-    <?php echo $sys->block_show('footer'); ?>
+    <footer>
+      <section class="row site-footer-bottom">
+        <div class="container">
+          <div class="row">
+            <?php echo $sys->block_show('footer'); ?>
+          </div>
+        </div>
+      </section>
+    </footer>
     <?php echo $sys->block_show('debug'); ?>
   </div>
 
@@ -48,7 +56,7 @@ $is_admin = _ADMIN != '' ? true : false;
   $sys->link_js($sys->template_url . 'assets/vendors/imagesloaded.pkgd.min.js', false);
   $sys->link_js($sys->template_url . 'assets/js/hostpro.js', false);
   ?>
- 
+
 </body>
 
 </html>

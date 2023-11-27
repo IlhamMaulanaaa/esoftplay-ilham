@@ -57,7 +57,7 @@
 }
 
 .card .col-md-3 {
-  text-align: center;
+  text-align: left;
 }
 
 .card .col-md-9 {
@@ -104,4 +104,25 @@
 }
 .navbar-style1 .navbar-nav > li .dropdown-menu li a:hover, .navbar-style1 .navbar-nav > li .dropdown-menu li a:focus{
   color: #ff6726;
+}
+.img_wtc_icon{
+  width: 48px;
+}
+.img_trim{
+  width: 190px;
+}
+.promotion{
+  margin: 90px auto;
+}
+.logos{
+  max-width: 110px;
+  max-height: 92px;
+}
+.logoTOF{
+  max-width: 150px;
+  max-height: 122px;  
+}
+.list_menu_footer{
+  border: 0px;
+  list-style-type: none;
 }

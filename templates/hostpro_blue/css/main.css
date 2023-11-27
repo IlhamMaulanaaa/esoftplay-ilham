@@ -2594,7 +2594,8 @@
   .c2a-plan {
     padding: 95px 0 110px;
     background: #36424d; }
-    .c2a-plan:before {
+    /* .c2a-plan:before {
+      background: url(/ilham/templates/hostpro_blue/assets/images/vidbg.jpg) no-repeat fixed center center;
       content: '';
       display: block;
       position: absolute;
@@ -2602,9 +2603,8 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: url(/ilham/templates/hostpro_blue/assets/images/vidbg.jpg) no-repeat fixed center center;
       background-size: cover;
-      opacity: 0.21; }
+      opacity: 0.21; } */
   
   .c2ap-title {
     color: #fff;

@@ -2,7 +2,7 @@
 	exit('No direct script access allowed');
 
 $config = $output['config'];
-$arr = $output['data']; ?>
+$arr 		= $output['data']; ?>
 <section class="row "		id="services_trimcontent">
 	<div class="container">
 		<div class="row section-title text-center ">
@@ -12,7 +12,7 @@ $arr = $output['data']; ?>
 				?>
 				<div class="column">
 					<?php 
-					echo (!empty($config['thumbnail']) && !empty($data['image'])) ? content_src($data['image'], ' class="img-thumbnail pull-top" title="' . $data['title'] . '"') : '';
+					echo (!empty($config['thumbnail']) && !empty($data['image'])) ? content_src($data['image'], ' class="img-thumbnail pull-top img_trim" title="' . $data['title'] . '"') : '';
 					if ($config['rating']) 
 					{
 						?>
