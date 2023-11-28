@@ -1,4 +1,4 @@
-<?php
+<?php if (!defined('_VALID_BBC')) exit('No direct script access allowed');
 foreach ($cat['list'] as $index => $item) 
 {
   ?>

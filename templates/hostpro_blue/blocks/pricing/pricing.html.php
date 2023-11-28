@@ -1,12 +1,11 @@
-<?php
+<?php if (!defined('_VALID_BBC')) exit('No direct script access allowed');
 $color = array('green', 'primary', 'blue');
-$indexcolor = 0; 
+$indexcolor = 0; // Initialize color index
 ?>
-
 <section class="row pricing-tabs-section">
   <div class="container">
     <div class="row section-title text-center">
-      <h2>Pricing</h2>
+      <h2><?php echo lang('most popular news')?></h2>
     </div>
     <ul class="nav nav-tabs pricing-tab" role="tablist">
       <?php
@@ -14,8 +13,7 @@ $indexcolor = 0;
       {
         ?>
         <li role="presentation" class="<?php echo $index == 0 ? 'active' : '' ?>">
-          <a href="#pricing-tab<?php echo $index + 1 ?>" aria-controls="pricing-tab<?php echo $index + 1 ?>"
-            role="tab" data-toggle="tab">
+          <a href="#pricing-tab<?php echo $index + 1 ?>" aria-controls="pricing-tab<?php echo $index + 1 ?>" role="tab" data-toggle="tab">
             <?php echo $cat['title'] ?>
           </a>
         </li>
@@ -38,15 +36,17 @@ $indexcolor = 0;
             ?>
             <div class="col-sm-4 pricing-plan <?php echo $current_color; ?>">
               <div class="pp-inner row">
-                <h2 class="h4 pp-title"><?php echo $item['title'] ?></h2>
+                <h2 class="h4 pp-title">
+                  <?php echo $item['title'] ?>
+                </h2>
                 <ul class="nav pp-list">
-                  <li><?php echo $item['intro'] ?></li>
+                  <li>
+                    <?php echo $item['intro'] ?>
+                  </li>
                 </ul>
                 <div class="media hst-plan-price">
-                  <div class="media-body">
-                    <span class="price"><sup>$ </sup>240 <sub>monthly</sub></span>
-                  </div>
-                  <div class="media-right"><a href="#" class="btn btn-default">choose plan</a></div>
+                  <div class="media-center"><a href="<?php echo content_link($item['id'], $item['title']); ?>"
+                      class="btn btn-default col-md-12"><?php echo lang('more details');?></a></div>
                 </div>
               </div>
             </div>

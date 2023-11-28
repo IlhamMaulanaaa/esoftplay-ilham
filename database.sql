@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 27, 2023 at 12:26 PM
+-- Generation Time: Nov 28, 2023 at 05:17 PM
 -- Server version: 5.7.42
 -- PHP Version: 7.4.33
 
@@ -108,6 +108,14 @@ CREATE TABLE `bbc_alert` (
   `updated` datetime DEFAULT '0000-00-00 00:00:00',
   `created` datetime DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Jika ingin me-notif semua member dalam suatu group maka harus memasukkan satu2 tiap user_id dalam group tersebut, karena jika mengunakan group_id maka jika salah satu user dalam group_id tsb membuka maka alert untuk yg lain akan hilang';
+
+--
+-- Dumping data for table `bbc_alert`
+--
+
+INSERT INTO `bbc_alert` (`id`, `user_id`, `group_id`, `module`, `title`, `description`, `params`, `is_open`, `is_admin`, `updated`, `created`) VALUES
+(1, 1, 0, 'content', 'Comment:: Garuda Buka Rute Surabaya - Jeddah', 'hai', '{\"name\":\"Ilham+Maulana\",\"email\":\"xilhammaulanax739%40gmail.com\",\"website\":\"\",\"content\":\"hai\",\"g-recaptcha-response\":\"03AFcWeA60QqeCv2LDD74kfAPJGBqTrc2_abXi89XbCkCCKhiBSg2cDKjbA2FV8nx4P6r2-eQT-8R26xct7plwCBRJ061vnhm8nk85ggDNq1UqRnicvpgveym85F8nOG5sWXCf3S-i6KaCzmWJ01G_N2Bv9-Gj99hO6x7RDSPmSBWUBYEPwVSGWpoFNxP536UoI4QnPu55N4nhWEHpZmbQFu19lxe_IAt_D7v2p80ZUbdBbQwhmii5FbnQuCq6DIsFPCuvwhPBhMUAfhmlwvJwSCCbZ82gDBVaxC1jJ9J9GVwW_Mz0k9Glatb2qF0sEVqk2EiG41VGquuGevSQxVEe53HarOqWu4bazC-Q94UGMrB07fGuiYHp8zNtJz125wFSvrfLtAyfsiez5S1FD3554GnlyLhTQPlXBaJ0dZlZBglD8W9UJ3h9MWPzLUl6h1fac7pXSIUJZJncDOqiHy9ecTvB6HEGuvKz_jfUm1XIKQPWANY3xREwMBtaYrSAG2NGvHRn2AM4pTzAlbxHze5wzTmKvyBs_ez61qfONy7UHvHnuUs0wn-gRNkm5JLzaBeY8EN8TGVwKC11\",\"token\":\"b49zjiyxgZs%2FYLhTagVfR8UG2KOdk5ldAUIfFnXuHuGo62QFhHifYjXwvJhpQxsJ35OMnEbgna3p4lo9zu9GSB3zV5IzA0aHsGiz2%2FqkMWNDPLlnrvA6nBTmTnl596BsURrrMtYvA8TP8alZ3t98Xf7kpeUQSMJhQdZfxbmay7YMCsXa8qyCQvTVnhF894KkbrjpWiEfjwz2ouzNb74Uj7jpCpZtwB%2Fke%2FDNz%2F%2B5daaYKbF1GTgyq6liiZusds%2FlcRkbEUafgBjDT%2FxGFbbrzNIt9rYdARP8irTtnj6NYgGy3TXfjhma5WZOuZCRBqTkyy2QdxKRmM66ruLtKoeUGKPPoRpUdBhHFrUjFWdR1sSwhyi29RZJ70lviDS5CFkYHFzQfhSwp8xKozsOrNy2zvSLcXcPEc%2FDyKXFkjN1ajI%2B7OSWu1HBLD7X00IhCC4gxU8x8qm0lM2c7I0%2FwMIIKAssxE3R%2B504JKMVKx5JoqOvktEGx1EUOMXJpR6%2F90yDJKCPI4ko9CZO%2FGMdJmU6M8euea3DejBoS9Pk7Kc44zual66xoi7HiBDoaBEBkQyQXmM503kl4icM7Y5OO9gwmlVj%2BEYpg7vgF%2Fw5P1rATyT0SxS%2Fi%2FwNhy3JeKhsO1%2F99wb5IsBRDaLwcopvx3PnVH5TcR3yke3s4ThHpMyFgzrOj7iDdNAj9hHqnNOInkTkyYyJEuHJDadIOw2YyXMMwqkLB%2FvYPMfwYCad%2FhiUIuFAi528YQlo5pp2LKFjxUyVDu4f1fwTBIwz5XV%2FOkRLlysETK5joNZsJFL6jXiyu%2BY%3D\",\"par_id\":\"0\",\"user_id\":0,\"image\":\"https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocKJD9qManSzA5ss8xlnK-udcIEPzibzLAXHz0ypUG1gDQ%3Ds96-c\",\"id\":\"43\",\"link\":\"http%3A%2F%2Flocalhost%2Filham%2Fgaruda-buka-rute-surabaya-jeddah_38.htm\",\"url\":\"http%3A%2F%2Flocalhost%2Filham%2Fgaruda-buka-rute-surabaya-jeddah_38.htm\",\"url_admin\":\"index.php%3Fmod%3Dcontent.comment_edit%26id%3D43\"}', 1, 3, '2023-11-28 10:04:56', '2023-11-27 14:46:31'),
+(2, 1, 0, 'content', 'Comment:: Garuda Buka Rute Surabaya - Jeddah', 'wah content ini sangat membantu', '{\"name\":\"Ilham+Maulana\",\"email\":\"xilhammaulanax739%40gmail.com\",\"website\":\"\",\"content\":\"wah+content+ini+sangat+membantu\",\"g-recaptcha-response\":\"03AFcWeA4liUhJNNf4aemnXfiaf3cL0A6SWLgB5FWf3GnoT7KICLFoJDCmgE85HLDekmHMiAZ5NULXm2QSynaZJ09vd8tp0vgM5OyFYj2u0Mgjk8gUaAKOui1t9j7V82LwtQY_SuA5QYXyy6DAzTkkiaufQnDyBTOWKhrdaQaZuM1DKLuitaDz6xnej9jCVA6SN93PLxpUaFxCHae69uj1uy06pY8tPxJjVccZIAooT6bgGXn2IE3HFJr2D-n4K23Bo8wWefaglJ9fKquRm2g-VEwcz9vRcc552IoDgDOconuntWAPjncDC02TosCaye7MemPRT_4Dbp65NDWSc1L_4wUfCU3iDbhVhtkM6lLIf6Adg00wRGCuVb82Qzb_vivXbrdROUiChlcBVegDXj3eDOgRshxjbPGpUwEgDPFiaVUvWsc6A3Cn34y9Q-nl7pXOCtEEpzFaTH05dhTgiM01T4RrHLex3zh8DwqeBt2p9tReI9CJkqhklfyv4MoNGotfqcQkVSCj6NSMhZHVsuywpk1eUBjvWq-r9HSGY0dbJUSBmX05N1SDLtc\",\"token\":\"mk54OOwVoVSlEghQLESTjHMoVbIFkEGvme9SwXw5CDzqQ%2BUt1aSK4CECKeQll8i0nhtp40d15XkWC3MunQK4q4xhtSk7ZSsJS5DkpF1flGfW3sQToWs4IlCW0Ug1pz%2FYJKq5hv46NSDoD6c4GniG%2B7PfDezwxaOZu4yqL7stF2Cw9T2U2UdY4Zk5vMlwqbZjeZZiwgksPvzx%2Fmes4D6ZZrVuyma%2BAonmXZRteVIib0l4XABv1YgYAlTRHn9jFxnaG6c1Op0qgoB4dTAQgadursjBD78zsELd1b12p887x%2F8RAfEEfDPQcKOa0qx7a8pO2GHSsMizM3XVMnh%2BWilF3yJPcgjNoFBqAz2hWZGeLt8%2FXkIhcjPbSp4O90P5r4BOnpf2xcTq%2FpnjGaxEEIgFwIWstmPErIKA02qgFqCr50zw5cFN9cilrBBrmEIL07wQJWPfSIG8T4jNGHV1aFrpa5hWoPA0vQBSuZUUdlCd%2FY8O6K5Mg2ZJJ4ua81d4v5ISHYxMt7OxDr9Kt9mhQ%2FjBnIJvHTQ2KZWUdyQpr44vfILsomnqcWuMnTYf%2FYFBzU5FFcqfMOr%2FhZt9IFi5SItJ2gFKuV%2FUJjrzed03hSHwuc0HDpPdu5pQxjsj5NvxpW8Keh11PvJb1ORw94vt6gE3VfrT%2F3Xa73BX1bnp1GcIhEbcId1s5s6ZNYQr6SIgIKku9OfSbzGjjR4tmFjcOQoVt6L0gBjkzMxAPzfybZVwYpXZ1U60MduqMvq%2FS7sgZdXXpviPcf76bn8%2FZnCUTm%2BssX6A0GK5IXGTxtkAsGrcCIM%3D\",\"par_id\":\"0\",\"user_id\":0,\"image\":\"https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocKJD9qManSzA5ss8xlnK-udcIEPzibzLAXHz0ypUG1gDQ%3Ds96-c\",\"id\":\"44\",\"link\":\"http%3A%2F%2Flocalhost%2Filham%2Fgaruda-buka-rute-surabaya-jeddah_38.htm\",\"url\":\"http%3A%2F%2Flocalhost%2Filham%2Fgaruda-buka-rute-surabaya-jeddah_38.htm\",\"url_admin\":\"index.php%3Fmod%3Dcontent.comment_edit%26id%3D44\"}', 0, 3, '0000-00-00 00:00:00', '2023-11-28 15:47:26');
 
 -- --------------------------------------------------------
 
@@ -263,18 +271,19 @@ INSERT INTO `bbc_block` (`id`, `template_id`, `block_ref_id`, `position_id`, `sh
 (125, 7, 9, 7, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"\",\"image\":\"images%2Fuploads%2Flogo-white.png\",\"size\":\"154x30\",\"is_link\":\"1\",\"link\":\"\",\"title\":\"\",\"attribute\":\"\"}', 1, 1),
 (138, 7, 10, 3, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"menu-home\",\"cat_id\":\"1\",\"submenu\":\"bottom+right\"}', 1, 1),
 (142, 7, 14, 5, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"slider-home\",\"cat_id\":\"2\",\"fixsize\":\"1\",\"caption\":\"1\",\"indicator\":\"1\",\"control\":\"1\"}', 1, 1),
-(143, 7, 6, 10, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"search-home\",\"caption\":\"Apa+yang+%7C+ingin+anda+cari%3F\"}', 1, 1),
-(172, 7, 19, 8, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"promo\",\"kind_id\":\"-1\",\"type_id\":\"1\",\"cat_id\":\"1\",\"ids\":\"\",\"idTestimony\":\"1%2C2\",\"image\":\"images%2Fuploads%2Fservice-quote2.png\",\"popular\":\"\",\"limit_title\":\"75\",\"limit_title_by\":\"char\",\"title\":\"0\",\"title_link\":\"0\",\"intro\":\"intro\",\"created\":\"0\",\"modified\":\"0\",\"author\":\"0\",\"tag\":\"0\",\"tag_link\":\"0\",\"rating\":\"0\",\"read_more\":\"0\",\"tot_list\":\"4\",\"thumbnail\":\"0\"}', 1, 1),
+(143, 7, 6, 5, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"search-home\",\"caption\":\"Apa+yang+%7C+ingin+anda+cari%3F\"}', 2, 1),
+(172, 7, 19, 8, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"promo\",\"kind_id\":\"-1\",\"type_id\":\"1\",\"cat_id\":\"1\",\"ids\":\"\",\"limit_comment\":\"2\",\"image\":\"images%2Fuploads%2Fservice-quote2.png\",\"popular\":\"\",\"limit_title\":\"75\",\"limit_title_by\":\"char\",\"title\":\"0\",\"title_link\":\"0\",\"intro\":\"intro\",\"created\":\"0\",\"modified\":\"0\",\"author\":\"0\",\"tag\":\"0\",\"tag_link\":\"0\",\"rating\":\"0\",\"read_more\":\"0\",\"tot_list\":\"4\",\"thumbnail\":\"0\"}', 1, 1),
 (154, 7, 10, 6, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"menu-footer\",\"cat_id\":\"1\",\"submenu\":\"bottom+right\"}', 1, 1),
 (155, 7, 3, 6, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"footer-content\",\"kind_id\":\"-1\",\"type_id\":\"1\",\"cat_id\":\"15\",\"ids\":\"\",\"popular\":\"\",\"limit_title\":\"75\",\"limit_title_by\":\"char\",\"title\":\"0\",\"title_link\":\"0\",\"intro\":\"intro\",\"created\":\"0\",\"modified\":\"0\",\"author\":\"0\",\"tag\":\"0\",\"tag_link\":\"0\",\"rating\":\"0\",\"read_more\":\"0\",\"tot_list\":\"1\",\"thumbnail\":\"0\"}', 2, 1),
-(156, 7, 6, 6, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"search-footer\",\"caption\":\"Sed+ut+perspiciatis+unde+omnis+iste+natus+error+sit+voluptatem+working+accusantium+doloremque+laudantium%2C+totam.\"}', 3, 1),
-(157, 7, 3, 9, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"middle-content\",\"kind_id\":\"-1\",\"type_id\":\"1\",\"cat_id\":\"16\",\"ids\":\"\",\"popular\":\"\",\"limit_title\":\"75\",\"limit_title_by\":\"char\",\"title\":\"0\",\"title_link\":\"0\",\"intro\":\"intro\",\"created\":\"0\",\"modified\":\"0\",\"author\":\"0\",\"tag\":\"0\",\"tag_link\":\"0\",\"rating\":\"0\",\"read_more\":\"0\",\"tot_list\":\"1\",\"thumbnail\":\"0\"}', 1, 1),
+(156, 7, 6, 6, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"search-footer\",\"caption\":\"Sed+ut+perspiciatis+unde+omnis+iste+natus+error+sit+voluptatem+working+accusantium+doloremque+laudantium%2C+totam.\"}', 3, 0),
+(157, 7, 3, 8, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"middle-content\",\"kind_id\":\"-1\",\"type_id\":\"1\",\"cat_id\":\"16\",\"ids\":\"\",\"popular\":\"\",\"limit_title\":\"75\",\"limit_title_by\":\"char\",\"title\":\"0\",\"title_link\":\"0\",\"intro\":\"intro\",\"created\":\"0\",\"modified\":\"0\",\"author\":\"0\",\"tag\":\"0\",\"tag_link\":\"0\",\"rating\":\"0\",\"read_more\":\"0\",\"tot_list\":\"1\",\"thumbnail\":\"0\"}', 3, 1),
 (145, 7, 3, 8, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"leason\",\"kind_id\":\"-1\",\"type_id\":\"1\",\"cat_id\":\"10\",\"ids\":\"\",\"popular\":\"\",\"limit_title\":\"75\",\"limit_title_by\":\"char\",\"title\":\"0\",\"title_link\":\"0\",\"intro\":\"intro\",\"created\":\"0\",\"modified\":\"0\",\"author\":\"0\",\"tag\":\"0\",\"tag_link\":\"0\",\"rating\":\"0\",\"read_more\":\"0\",\"tot_list\":\"6\",\"thumbnail\":\"0\"}', 2, 1),
-(147, 7, 13, 9, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"testimonials\",\"limit\":\"5\",\"avatar\":\"1\",\"orderby\":\"1\",\"readmore\":\"0\"}', 3, 1),
-(150, 7, 3, 4, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"news\",\"kind_id\":\"-1\",\"type_id\":\"1\",\"cat_id\":\"12\",\"ids\":\"\",\"popular\":\"\",\"limit_title\":\"75\",\"limit_title_by\":\"char\",\"title\":\"0\",\"title_link\":\"0\",\"intro\":\"intro\",\"created\":\"0\",\"modified\":\"0\",\"author\":\"0\",\"tag\":\"0\",\"tag_link\":\"0\",\"rating\":\"0\",\"read_more\":\"0\",\"tot_list\":\"3\",\"thumbnail\":\"0\"}', 1, 1),
-(151, 7, 3, 4, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"client-logos\",\"kind_id\":\"-1\",\"type_id\":\"1\",\"cat_id\":\"13\",\"ids\":\"\",\"popular\":\"\",\"limit_title\":\"1\",\"limit_title_by\":\"word\",\"title\":\"0\",\"title_link\":\"0\",\"intro\":\"intro\",\"created\":\"0\",\"modified\":\"0\",\"author\":\"0\",\"tag\":\"0\",\"tag_link\":\"0\",\"rating\":\"0\",\"read_more\":\"0\",\"tot_list\":\"6\",\"thumbnail\":\"0\"}', 2, 1),
-(152, 7, 3, 4, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"topOfFooter\",\"kind_id\":\"-1\",\"type_id\":\"1\",\"cat_id\":\"14\",\"ids\":\"\",\"popular\":\"\",\"limit_title\":\"75\",\"limit_title_by\":\"char\",\"title\":\"0\",\"title_link\":\"0\",\"intro\":\"intro\",\"created\":\"0\",\"modified\":\"0\",\"author\":\"0\",\"tag\":\"0\",\"tag_link\":\"0\",\"rating\":\"0\",\"read_more\":\"0\",\"tot_list\":\"1\",\"thumbnail\":\"0\"}', 3, 1),
-(171, 7, 18, 9, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"pricing\",\"kind_id\":\"-1\",\"type_id\":\"1\",\"cat_id\":[\"8\",\"3\",\"10\",\"16\"],\"ids\":\"\",\"popular\":\"\",\"limit_title\":\"75\",\"limit_title_by\":\"char\",\"title\":\"0\",\"title_link\":\"0\",\"intro\":\"intro\",\"created\":\"0\",\"modified\":\"0\",\"author\":\"0\",\"tag\":\"0\",\"tag_link\":\"0\",\"rating\":\"0\",\"read_more\":\"0\",\"tot_list\":\"3\",\"thumbnail\":\"0\"}', 2, 1);
+(147, 7, 13, 8, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"testimonials\",\"limit\":\"5\",\"avatar\":\"1\",\"orderby\":\"1\",\"readmore\":\"0\"}', 5, 1),
+(150, 7, 3, 8, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"news\",\"kind_id\":\"-1\",\"type_id\":\"1\",\"cat_id\":\"12\",\"ids\":\"\",\"popular\":\"\",\"limit_title\":\"75\",\"limit_title_by\":\"char\",\"title\":\"0\",\"title_link\":\"0\",\"intro\":\"intro\",\"created\":\"0\",\"modified\":\"0\",\"author\":\"0\",\"tag\":\"0\",\"tag_link\":\"0\",\"rating\":\"0\",\"read_more\":\"0\",\"tot_list\":\"3\",\"thumbnail\":\"0\"}', 6, 1),
+(151, 7, 3, 8, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"client-logos\",\"kind_id\":\"-1\",\"type_id\":\"1\",\"cat_id\":\"13\",\"ids\":\"\",\"popular\":\"\",\"limit_title\":\"1\",\"limit_title_by\":\"word\",\"title\":\"0\",\"title_link\":\"0\",\"intro\":\"intro\",\"created\":\"0\",\"modified\":\"0\",\"author\":\"0\",\"tag\":\"0\",\"tag_link\":\"0\",\"rating\":\"0\",\"read_more\":\"0\",\"tot_list\":\"6\",\"thumbnail\":\"0\"}', 7, 1),
+(175, 7, 20, 6, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"footer_subscribe\",\"caption\":\"Sign+Up+for+Our+Newsletter\",\"intro\":\"Sed+ut+perspiciatis+unde+omnis+iste+natus+error+sit+voluptatem+working+accusantium+doloremque+laudantium%2C+totam.\",\"list_id\":\"cf7f77a383\",\"api_key\":\"3091c7075d29d8a9bd4adeef179c41d9-us21\"}', 4, 1),
+(171, 7, 18, 8, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"pricing\",\"kind_id\":\"-1\",\"type_id\":\"1\",\"cat_id\":[\"8\",\"3\",\"10\",\"16\"],\"ids\":\"\",\"popular\":\"\",\"limit_title\":\"75\",\"limit_title_by\":\"char\",\"title\":\"0\",\"title_link\":\"0\",\"intro\":\"intro\",\"created\":\"0\",\"modified\":\"0\",\"author\":\"0\",\"tag\":\"0\",\"tag_link\":\"0\",\"rating\":\"0\",\"read_more\":\"0\",\"tot_list\":\"3\",\"thumbnail\":\"0\"}', 4, 1),
+(173, 7, 9, 9, 0, '', 0, 37, ',all,', ',all,', '', '', '', '{\"template\":\"footer-logo\",\"image\":\"images%2Fuploads%2Flogo-white.png\",\"size\":\"150x29.25\",\"is_link\":\"1\",\"link\":\"\",\"title\":\"\",\"attribute\":\"\"}', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -338,7 +347,8 @@ INSERT INTO `bbc_block_ref` (`id`, `name`) VALUES
 (15, 'content_list'),
 (16, 'content_tag'),
 (18, 'pricing'),
-(19, 'promo');
+(19, 'promo'),
+(20, 'subscription');
 
 -- --------------------------------------------------------
 
@@ -480,13 +490,14 @@ INSERT INTO `bbc_block_text` (`block_id`, `title`, `lang_id`) VALUES
 (121, 'User menu', 1),
 (125, 'logo', 1),
 (142, 'image-slider', 1),
+(173, 'footer-top', 1),
+(175, 'percobaan', 1),
 (138, 'menu', 1),
 (143, 'search', 1),
 (145, 'leason', 1),
 (147, 'testimonials', 1),
 (150, 'news', 1),
 (151, 'client-logos', 1),
-(152, 'topOfFooter', 1),
 (154, 'menu-footer', 1),
 (155, 'footer-content', 1),
 (156, 'search-footer', 1),
@@ -666,15 +677,15 @@ INSERT INTO `bbc_content` (`id`, `par_id`, `type_id`, `kind_id`, `file`, `file_u
 (31, 0, 1, 0, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'konektivitas-nusantara.jpg', '', '', '2016-05-04 03:11:39', 1, 'Administrator', '2016-05-04 03:11:39', 1, 18, ',all,', 40, '0', '2011-04-25 13:09:53', 1, 0, 0, '', 1),
 (32, 0, 1, 0, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'membumikan-transportasi-ke-ranah-lokal.jpg', '', '', '2016-05-04 03:11:39', 1, 'Administrator', '2016-05-04 03:11:39', 1, 5, ',all,', 117, '0', '2016-04-16 04:03:32', 0, 0, 0, '', 0),
 (33, 0, 1, 0, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'nikmat-teh-di-pasar-terapung.jpg', '', '', '2016-05-04 03:11:39', 1, 'Administrator', '2016-05-04 03:11:39', 1, 7, ',all,', 314, '0', '2016-04-15 23:24:10', 1, 0, 0, '', 1),
-(34, 0, 1, 0, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'tol-semakin-dikebut.jpg', '', '', '2016-05-04 03:11:39', 1, 'Administrator', '2016-05-04 03:11:39', 1, 12, ',all,', 391, '0', '2023-11-23 14:23:03', 1, 0, 0, '', 1),
-(36, 0, 1, 0, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'belawan-terus-berbenah.jpg', '', '', '2016-05-04 03:11:39', 1, 'Administrator', '2016-05-04 03:11:39', 1, 10, ',all,', 410, '0', '2023-11-27 05:41:27', 1, 0, 0, '', 1),
+(34, 0, 1, 0, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'tol-semakin-dikebut.jpg', '', '', '2016-05-04 03:11:39', 1, 'Administrator', '2016-05-04 03:11:39', 1, 12, ',all,', 393, '0', '2023-11-28 11:20:52', 1, 0, 0, '', 1),
+(36, 0, 1, 0, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'belawan-terus-berbenah.jpg', '', '', '2016-05-04 03:11:39', 1, 'Administrator', '2016-05-04 03:11:39', 1, 10, ',all,', 411, '0', '2023-11-28 16:37:13', 1, 0, 0, '', 1),
 (37, 0, 1, 0, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'pasar-perintis-kian-seksi.jpg', '', '', '2016-05-04 03:11:39', 1, 'Administrator', '2016-05-04 03:11:39', 1, 17, ',all,', 215, '0', '2023-11-27 05:38:38', 1, 0, 0, '', 1),
-(38, 0, 1, 0, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'garuda-buka-rute-surabaya-jeddah.jpg', '', '', '2016-05-04 03:11:39', 1, 'Administrator', '2016-05-21 16:46:21', 1, 53, ',all,', 190, '0,0,0,1,0', '2023-11-13 17:44:30', 1, 0, 0, '', 1),
+(38, 0, 1, 0, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'garuda-buka-rute-surabaya-jeddah.jpg', '', '', '2016-05-04 03:11:39', 1, 'Administrator', '2016-05-21 16:46:21', 1, 53, ',all,', 193, '0,0,0,1,1', '2023-11-28 15:46:28', 1, 0, 0, '', 1),
 (39, 0, 1, 1, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'images/modules/content/39/wc1.png', '', '[{\"image\":\"wc1.png\",\"title\":\"\",\"description\":\"\"}]', '2023-11-13 18:23:41', 1, 'Administrator', '2023-11-14 13:25:57', 1, 3, ',all,', 0, '0', '0000-00-00 00:00:00', 1, 0, 0, '', 1),
-(40, 0, 1, 1, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'images/modules/content/40/wc2.png', '', '[{\"image\":\"wc2.png\",\"title\":\"\",\"description\":\"\"}]', '2023-11-13 18:34:52', 1, 'Administrator', '2023-11-14 13:25:50', 1, 3, ',all,', 0, '0', '0000-00-00 00:00:00', 1, 0, 0, '', 1),
+(40, 0, 1, 1, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'images/modules/content/40/wc2.png', '', '[{\"image\":\"wc2.png\",\"title\":\"\",\"description\":\"\"}]', '2023-11-13 18:34:52', 1, 'Administrator', '2023-11-14 13:25:50', 1, 3, ',all,', 1, '0', '2023-11-28 16:36:39', 1, 0, 0, '', 1),
 (41, 0, 1, 1, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'images/modules/content/41/wc3.png', '', '[{\"image\":\"wc3.png\",\"title\":\"\",\"description\":\"\"}]', '2023-11-14 11:06:28', 1, 'Administrator', '2023-11-14 13:25:39', 1, 3, ',all,', 0, '0', '0000-00-00 00:00:00', 1, 0, 0, '', 1),
 (42, 0, 1, 1, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'images/modules/content/42/wc4.png', '', '[{\"image\":\"wc4.png\",\"title\":\"\",\"description\":\"\"}]', '2023-11-14 11:07:16', 1, 'Administrator', '2023-11-14 13:25:32', 1, 2, ',all,', 0, '0', '0000-00-00 00:00:00', 1, 0, 0, '', 1),
-(43, 0, 1, 1, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'images/modules/content/43/wc5.png', '', '[{\"image\":\"wc5.png\",\"title\":\"\",\"description\":\"\"}]', '2023-11-14 11:08:11', 1, 'Administrator', '2023-11-14 13:25:25', 1, 2, ',all,', 0, '0', '0000-00-00 00:00:00', 1, 0, 0, '', 1),
+(43, 0, 1, 1, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'images/modules/content/43/wc5.png', '', '[{\"image\":\"wc5.png\",\"title\":\"\",\"description\":\"\"}]', '2023-11-14 11:08:11', 1, 'Administrator', '2023-11-14 13:25:25', 1, 2, ',all,', 2, '0', '2023-11-28 16:49:42', 1, 0, 0, '', 1),
 (44, 0, 1, 1, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'images/modules/content/44/wc6.png', '', '[{\"image\":\"wc6.png\",\"title\":\"\",\"description\":\"\"}]', '2023-11-14 11:09:04', 1, 'Administrator', '2023-11-14 13:24:58', 1, 2, ',all,', 0, '0', '0000-00-00 00:00:00', 1, 0, 0, '', 1),
 (51, 0, 1, 1, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'images/modules/content/51/client1.png', '', '[{\"image\":\"client1.png\",\"title\":\"\",\"description\":\"\"}]', '2023-11-15 15:12:02', 1, 'Administrator', NULL, NULL, 0, ',all,', 0, '0', '0000-00-00 00:00:00', 1, 0, 0, '', 1),
 (49, 0, 1, 1, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'images/modules/content/49/lpost2.jpg', '', '[{\"image\":\"lpost2.jpg\",\"title\":\"\",\"description\":\"\"}]', '2023-11-15 14:33:32', 1, 'Administrator', '2023-11-15 14:37:11', 1, 1, ',all,', 0, '0', '0000-00-00 00:00:00', 1, 0, 0, '', 1),
@@ -687,7 +698,7 @@ INSERT INTO `bbc_content` (`id`, `par_id`, `type_id`, `kind_id`, `file`, `file_u
 (56, 0, 1, 1, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'images/modules/content/56/client6.png', '', '[{\"image\":\"client6.png\",\"title\":\"\",\"description\":\"\"}]', '2023-11-15 15:17:11', 1, 'Administrator', NULL, NULL, 0, ',all,', 0, '0', '0000-00-00 00:00:00', 1, 0, 0, '', 1),
 (57, 0, 1, 1, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'images/modules/content/57/logo-white.png', '', '[{\"image\":\"logo-white.png\",\"title\":\"\",\"description\":\"\"}]', '2023-11-15 16:34:24', 1, 'Administrator', NULL, NULL, 0, ',all,', 1, '0', '2023-11-16 15:50:24', 1, 0, 0, '', 1),
 (58, 0, 1, 0, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', '', '', '2023-11-16 14:12:55', 1, 'Administrator', '2023-11-16 14:22:12', 1, 9, ',all,', 0, '0', '0000-00-00 00:00:00', 1, 0, 0, '', 1),
-(59, 0, 1, 1, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'images/modules/content/59/vidbg.jpg', '', '[{\"image\":\"vidbg.jpg\",\"title\":\"\",\"description\":\"\"}]', '2023-11-16 16:29:41', 1, 'Administrator', '2023-11-16 16:44:07', 1, 8, ',all,', 1, '0', '2023-11-16 16:37:53', 1, 0, 0, '', 1);
+(59, 0, 1, 1, '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', 'images/modules/content/59/vidbg.jpg', '', '[{\"image\":\"vidbg.jpg\",\"title\":\"\",\"description\":\"\"}]', '2023-11-16 16:29:41', 1, 'Administrator', '2023-11-16 16:44:07', 1, 8, ',all,', 3, '0', '2023-11-28 11:21:52', 1, 0, 0, '', 1);
 
 -- --------------------------------------------------------
 
@@ -997,7 +1008,9 @@ INSERT INTO `bbc_content_comment` (`id`, `par_id`, `user_id`, `reply_all`, `repl
 (39, 0, 0, 0, 0, 34, 'Tol Semakin Dikebut', 'hendrikawati ', 'http://graph.facebook.com/100002013531460/picture', 'rickacipoet@yahoo.com', '', 'kapan nih penerimaan beasiswa diknas tahun 2010. 28 sept 2010 kemarin kan udah sosialisasi di diknas.. tapi kok lum ada juga pengumuman lagi. ten-temen yang dapat beasiswa pada bertnya-tanya ni.. :(( ', '2010-12-04 17:44:10', 1),
 (40, 0, 0, 0, 0, 16, 'Transportasi Yang Efisien', 'ajeng', 'http://graph.facebook.com/100000213226955/picture', 'ajen9m0et_morfabregas@yahoo.com', '', 'sy mau tanya,apa akadibyo ini ada kerjasama dg Rumah sakit2? kira2 mana saja? n apakah lulusan akadibyo terjamin pkerjaannya? misalkan di transfer ke RS? Dan apakah ada program magang di rumah sakit?  sy mnta tolong di balas via email saja dan dikirimkan total biaya selama pendidikan. terimakasih', '2010-12-09 20:23:09', 1),
 (41, 0, 0, 0, 0, 14, 'Sample Content Detail', 'tusi', 'http://graph.facebook.com/100001636105240/picture', 'thoesiygemini@yahoo.co.id', '', 'klo dr akuntansi bsa msuk akbid,, pa ujian tulisnya tetap sama', '2010-12-15 12:59:29', 1),
-(42, 0, 0, 0, 0, 1, 'Home page', 'Perusahaan', 'http://graph.facebook.com/100011328960689/picture', 'info@perusahaan.ac.id', '', '[ untuk alumni smk akuntansi bisa masuk apa tidak? ]\nOwh tentu saja bisa, perusahaan menerima semua jurusan untuk SMU atau sederajat.. :)', '2011-03-23 13:59:17', 1);
+(42, 0, 0, 0, 0, 1, 'Home page', 'Perusahaan', 'http://graph.facebook.com/100011328960689/picture', 'info@perusahaan.ac.id', '', '[ untuk alumni smk akuntansi bisa masuk apa tidak? ]\nOwh tentu saja bisa, perusahaan menerima semua jurusan untuk SMU atau sederajat.. :)', '2011-03-23 13:59:17', 1),
+(43, 0, 0, 0, 0, 38, 'Garuda Buka Rute Surabaya - Jeddah', 'Ilham Maulana', 'https://lh3.googleusercontent.com/a/ACg8ocKJD9qManSzA5ss8xlnK-udcIEPzibzLAXHz0ypUG1gDQ=s96-c', 'xilhammaulanax739@gmail.com', '', 'hai', '2023-11-27 14:46:31', 1),
+(44, 0, 0, 0, 0, 38, 'Garuda Buka Rute Surabaya - Jeddah', 'Ilham Maulana', 'https://lh3.googleusercontent.com/a/ACg8ocKJD9qManSzA5ss8xlnK-udcIEPzibzLAXHz0ypUG1gDQ=s96-c', 'xilhammaulanax739@gmail.com', '', 'wah content ini sangat membantu', '2023-11-28 15:47:26', 1);
 
 -- --------------------------------------------------------
 
@@ -2178,7 +2191,7 @@ CREATE TABLE `bbc_user` (
 --
 
 INSERT INTO `bbc_user` (`id`, `group_ids`, `username`, `password`, `last_ip`, `last_ip_temp`, `last_login`, `last_login_temp`, `exp_checked`, `login_time`, `created`, `active`) VALUES
-(1, ',3,4,1,2,', 'admin', 'wsBPVQ1EO3jWqIrEdqeDvQNvIqvdIZbPBTw8+Dh1g2b8bpBMVBbg4KjXoISb6elLtbbKZqjbZ4+AnyFFCNe3gA==', '::1', '::1', '2023-11-27 10:01:27', '2023-11-27 04:44:40', '2023-11-27 14:25:56', 62, '0000-00-00 00:00:00', 1),
+(1, ',3,4,1,2,', 'admin', 'wsBPVQ1EO3jWqIrEdqeDvQNvIqvdIZbPBTw8+Dh1g2b8bpBMVBbg4KjXoISb6elLtbbKZqjbZ4+AnyFFCNe3gA==', '::1', '::1', '2023-11-28 09:56:49', '2023-11-27 10:01:27', '2023-11-28 19:17:38', 63, '0000-00-00 00:00:00', 1),
 (2, ',2,1,3,4,', 'danang@fisip.net', 'wsBPVQ1EO3jWqIrEdqeDvQNvIqvdIZbPBTw8+Dh1g2b8bpBMVBbg4KjXoISb6elLtbbKZqjbZ4+AnyFFCNe3gA==', '127.0.0.1', '127.0.0.1', '2016-05-03 23:35:44', '2016-05-03 23:32:34', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 1);
 
 -- --------------------------------------------------------
@@ -3382,13 +3395,13 @@ ALTER TABLE `bbc_account_temp`
 -- AUTO_INCREMENT for table `bbc_alert`
 --
 ALTER TABLE `bbc_alert`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `bbc_block`
 --
 ALTER TABLE `bbc_block`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=173;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=176;
 
 --
 -- AUTO_INCREMENT for table `bbc_block_position`
@@ -3400,7 +3413,7 @@ ALTER TABLE `bbc_block_position`
 -- AUTO_INCREMENT for table `bbc_block_ref`
 --
 ALTER TABLE `bbc_block_ref`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `bbc_block_theme`
@@ -3442,7 +3455,7 @@ ALTER TABLE `bbc_content_category`
 -- AUTO_INCREMENT for table `bbc_content_comment`
 --
 ALTER TABLE `bbc_content_comment`
-  MODIFY `id` int(255) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int(255) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `bbc_content_registrant`

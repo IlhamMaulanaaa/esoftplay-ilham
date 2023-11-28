@@ -30,11 +30,20 @@ $is_admin = _ADMIN != '' ? true : false;
       </header>
 
       <?php echo $sys->block_show('header'); ?>
-      <?php echo $sys->block_show('intro'); ?>
       <?php echo trim($Bbc->content); ?>
       <?php echo $sys->block_show('content_top'); ?>
-      <?php echo $sys->block_show('content_bottom'); ?>
-      <?php echo $sys->block_show('bottom'); ?>
+      <section class="row site-footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="media">
+              <?php echo $sys->block_show('content_bottom'); ?>
+              <div class="col-sm-9 media-body">
+                <p><?php echo config('site', 'footer');?></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <section class="row site-footer-bottom">

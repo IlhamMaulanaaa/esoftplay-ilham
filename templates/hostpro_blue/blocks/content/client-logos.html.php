@@ -1,3 +1,4 @@
+<?php if (!defined('_VALID_BBC')) exit('No direct script access allowed');?>
 <section class="row client-logos">
   <div class="container">
     <div class="row section-title text-center">

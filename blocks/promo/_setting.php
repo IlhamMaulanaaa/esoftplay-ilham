@@ -78,10 +78,10 @@ $_setting = array(
 		'type'		=> 'text',
 		'help'		=> 'Insert multiple content IDs separate by comma'
 		),
-	'idTestimony'	=> array(
-		'text'		=> 'id testimoni',
+	'limit_comment'	=> array(
+		'text'		=> 'limit comment',
 		'type'		=> 'text',
-		'help'		=> 'Insert ID for testimoni this content'
+		'help'		=> 'Insert number for limit this comment'
 		),
 	'image' => array(
 		'text' => 'Image URL',

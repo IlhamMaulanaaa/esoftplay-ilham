@@ -111,36 +111,17 @@ if($config['cat_id']==-2) // latest content
 }else
 if (is_array($config['cat_id'])) {
 	$config['add_sql'] = $add_sql;
-
-	// Initialize an empty array to store the results for each category ID
 	$cat_results = array();
-	// Loop through each category ID
 	foreach ($config['cat_id'] as $cat_id) {
-			// Call content_cat_list for the current category ID
 			$cat = content_cat_list($cat_id, 0, $config);
-
-			// Check if the result is not empty before adding it to the array
 			if (!empty($cat)) {
 					$cat_results[] = $cat;
 			}
 	}
-
-	// Now $cat_results c	ontains the results for each category ID
-	// You can process or print the results as needed
-	// foreach ($cat_results as $cat_result) {
-	// 		pr($cat_result);
-	// }
-
-	// pr($config);
-	// echo 'hello';
 }
 else {
 	$cat['publish'] = false;
 }
-// pr($config['cat_id']);
-// pr($config['type_id']);
-
-// pr($config,$cat);
 if(!empty($cat['publish']))
 {
 	if (!empty($cat['list']))

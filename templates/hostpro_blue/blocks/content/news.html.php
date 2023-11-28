@@ -1,3 +1,4 @@
+<?php if (!defined('_VALID_BBC'))exit('No direct script access allowed'); ?>
 <section class="row latest-blogs">
   <div class="container">
     <div class="row section-title text-center">
@@ -16,13 +17,13 @@
           <div class="lp-inner row">
             <ul class="lp-meta list-unstyled">
               <li class="lp-cat"><em>
-                  <?php echo $item['intro'] ?>
+                  <?php echo $item['created_by_alias']?>
                 </em></a></li>
-              <li class="lp-date"><a href="#">
+              <li class="lp-date"><a href="<?php echo content_link($item['id'], $item['title']); ?>">
                   <?php echo substr($item['created'], 0, 10); ?>
                 </a></li>
             </ul>
-            <a href="<?php echo 'index.php?mod=content.detail&id=' . $item['id'] ?>">
+            <a href="<?php echo content_link($item['id'], $item['title']); ?>">
               <h2 class="lp-title">
                 <?php echo $item['title'] ?>
               </h2>

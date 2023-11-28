@@ -15,11 +15,8 @@ if (!empty($config['is_link']))
 	<?php
 }
 ?>
-<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav"
-	aria-expanded="false">
-	<span class="sr-only">
-		<?php echo lang('Nav Opener'); ?>
-	</span>
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+	<span class="sr-only"><?php echo lang('Nav Opener'); ?></span>
 	<span class="icon-bar"></span>
 	<span class="icon-bar"></span>
 	<span class="icon-bar"></span>

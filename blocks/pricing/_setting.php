@@ -8,7 +8,6 @@ LEFT JOIN bbc_content_cat_text AS t ON (t.cat_id=c.id AND t.lang_id=".lang_id().
 WHERE 1 ORDER BY c.par_id, t.title";
 $r = $db->getAll($q);
 $r_cat = array();
-// pr($r);
 foreach($r AS $d)
 {
 	if(empty($r_cat[$d['type_id']]))
@@ -80,12 +79,6 @@ $_setting = array(
 		'mandatory' => 0, // is this field must be filled in (compulsory). Eg. 1 or 0
 		'checked'   => 'any'	// validate input before it save in database eg. 'any' || 'email' || 'url' || 'phone' || 'number' default is 'any'
 		),
-	// 'cat_id'	=> array(
-	// 	'text'		=> 'Category',
-	// 	'type'		=> 'select',
-	// 	'attr'		=> 'onchange="z_cat(this);" rel="content_cat"',
-	// 	'option'	=> (array)@$r_cat[$type_id]
-	// 	),
 	'ids'	=> array(
 		'text'		=> 'Content IDs',
 		'type'		=> 'text',
@@ -121,7 +114,6 @@ $r['config']['intro']['option'] = array('intro', 'content', 'blank');
 $r['config']['intro']['default']= 'intro';
 $r['config']['intro']['tips']		= 'Select which field will use as description';
 $_setting =  array_merge($_setting, $r['config']);
-// pr($_setting);
 $rids = array_json($r_cat);
 if(empty($rids))
 {

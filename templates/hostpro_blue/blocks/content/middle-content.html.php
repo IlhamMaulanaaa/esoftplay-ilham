@@ -1,5 +1,6 @@
-<?php
-foreach ($cat['list'] as $item) {
+<?php if (!defined('_VALID_BBC')) exit('No direct script access allowed');
+foreach ($cat['list'] as $item) 
+{
   ?>
   <style>
     .c2a-plan:before {
@@ -23,7 +24,7 @@ foreach ($cat['list'] as $item) {
             <?php echo $item['title'] ?>
           </h2>
           <?php echo $item['content'] ?>
-          <a href="<?php echo 'index.php?mod=content.detail&id=' . $item['id'] ?>" class="btn btn-primary">View Plan</a>
+          <a href="<?php echo content_link($item['id'], $item['title']);?>" class="btn btn-primary">View Plan</a>
         </div>
       </div>
     </div>

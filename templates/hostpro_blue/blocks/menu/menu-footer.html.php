@@ -1,5 +1,5 @@
 <?php if (!defined('_VALID_BBC')) exit('No direct script access allowed');
-_func('hostpro');
+_func('news');
 ?>
 <div class="col-sm-4 widget-footer">
 	<h4 class="widget-title">Quick Links</h4>
